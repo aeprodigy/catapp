@@ -30,17 +30,18 @@ const Contact = () => {
     <div className='max-w-[1200px] m-auto w-full p-4 py-16 '>
       <h2 className='text-center text-gray-700 text-2xl '>Send us a Message</h2>
       <p className='text-center text-gray-700 py-2'>We're waiting on You</p>
-      <div>
+      <div className='grid md:grid-cols-2'>
         {data.map((item) => (
           <div key={item.id}>
-            <img src={item.url} alt="/" />
+            <img src={item.url} alt="/" 
+            className='w-full md:h-full object-cover p-2 max-h-[500px] h-[200px]'/>
           </div>
         ))}
         <form>
-          <div>
-            <input type="text" placeholder="first" />
-            <input type="text" placeholder="last" />
-            <input type="email" placeholder="email" />
+          <div className='grid grid-cols-2'>
+            <input className='border m-2 p-2' type="text" placeholder="first" />
+            <input className='border m-2 p-2' type="text" placeholder="last" />
+            <input className='border m-2 p-2' type="email" placeholder="email" />
             <input type="tel" placeholder="phone" />
             <input type="text" placeholder="address" />
             <textarea cols='30' rows='10' placeholder='mssg'></textarea>

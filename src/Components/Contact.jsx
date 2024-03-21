@@ -62,8 +62,8 @@ const Contact = () => {
               rows="10"
               placeholder="mssg"
             ></textarea>
-            <button className="bg-black text-white m-2 col-span-2 py-2 font-semibold">
-              Submit <IoIosSend />
+            <button className="bg-black text-white m-2 col-span-2 py-2 font-semibold flex justify-center items-center">
+              Submit<span className='text-xl'><IoIosSend /></span>
             </button>
           </div>
         </form>

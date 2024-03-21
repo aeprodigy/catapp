@@ -10,7 +10,7 @@ const Footer = () => {
           Pur<span className="bg-white text-black  rounded">Fect</span>
         </h1>
       </div>
-      <div className="flex justify-center ">
+      <div className="flex justify-center sm:p-4">
         <h3 className="text-white ml-20 font-bold">|</h3>
         <h3 className="text-white ml-20">mambwe</h3>
       </div>

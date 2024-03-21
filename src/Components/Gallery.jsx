@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
+import BigImage from './BigImage';
 
 const Gallery = () => {
   //Api key
@@ -11,7 +12,7 @@ const Gallery = () => {
 
   const fetchCats = () => {
     axios(
-      `https://api.thecatapi.com/v1/images/search?limit=5&api_key=${API_KEY}`
+      `https://api.thecatapi.com/v1/images/search?limit=4&api_key=${API_KEY}`
     )
       .then((response) => {
         setData(response.data);
@@ -25,12 +26,14 @@ const Gallery = () => {
   useState(() => {
     fetchCats();
   }, []);
+
   return (
     <div className='max-w-[1200px] m-auto w-full px-4 py-16'>
       <h2 className='text-center text-gray-600 p-4 text-xl md:text-2xl'>Gallery</h2>
-      <div className='grid sm:grid-cols-5 gap-4'>
+      <div className='grid sm:grid-cols-4 gap-4'>
+      <BigImage />
         {data.map((item) => (
-          <div key={item.id} className="">
+          <div key={item.id} className="shadow-lg">
             <img
               src={item.url}
               alt="/"

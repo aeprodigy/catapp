@@ -11,7 +11,7 @@ const CatsModel = () => {
 
   const fetchCats = () => {
     axios(
-      `https://api.thecatapi.com/v1/images/search?limit=20&api_key=${API_KEY}`
+      `https://api.thecatapi.com/v1/images/search?limit=3&api_key=${API_KEY}`
     )
       .then((response) => {
         setData(response.data);
@@ -26,22 +26,19 @@ const CatsModel = () => {
     fetchCats();
   }, []);
   return (
-    <div className="min-h-full">
-      <div className="w-full absolute top-[0%] p-4 md:p-8 "></div>
-      <h3 className="text-center pt-8 text-4xl font-bold text-gray-700">
-        Cat World
-      </h3>
-      <div className="grid md:grid-cols-3 gap-7 py-20">
-        {data.map((item) => (
-          <div key={item.id} className="mx-auto py-4">
-            <img
-              src={item.url}
-              alt="/"
-              className="w-[220px] hover:scale-110 "
-            />
-          </div>
-        ))}
-      </div>
+    <div className="max-w-[1140px] m-[57px] w-full md:flex mt-[-75px] md:justify-center">
+      {data.map((item) => (
+        <div key={item.id} className="relative p-4 ">
+          <h3 className="text-white absolute z-5 top-[25%] left-[25%] translate-x-[15%] translate-y-[160%]">
+            Know More
+          </h3>
+          <img
+            src={item.url}
+            alt="/"
+            className="w-[220px] md:w-[220px] h-full object-cover border-4 border-white shadow-lg hover:scale-110 "
+          />
+        </div>
+      ))}
     </div>
   );
 }

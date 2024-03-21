@@ -51,12 +51,12 @@ const Contact = () => {
             />
             <input className="border m-2 p-2" type="tel" placeholder="phone" />
             <input
-              className="border m-2 p-2"
+              className="border col-span-2 m-2 p-2"
               type="text"
               placeholder="address"
             />
-            <textarea cols="20" rows="10" placeholder="mssg"></textarea>
-            <button>Submit</button>
+            <textarea className='border p-2 m-2 col-span-2' cols="20" rows="10" placeholder="mssg"></textarea>
+            <button className='bg-black text-white m-2 col-span-2 py-2 font-semibold'>Submit</button>
           </div>
         </form>
       </div>

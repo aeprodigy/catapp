@@ -1,5 +1,6 @@
 import axios from 'axios';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { IoIosSend } from "react-icons/io";
 
 const Contact = () => {
   //Api key
@@ -55,8 +56,15 @@ const Contact = () => {
               type="text"
               placeholder="address"
             />
-            <textarea className='border p-2 m-2 col-span-2' cols="20" rows="10" placeholder="mssg"></textarea>
-            <button className='bg-black text-white m-2 col-span-2 py-2 font-semibold'>Submit</button>
+            <textarea
+              className="border p-2 m-2 col-span-2"
+              cols="20"
+              rows="10"
+              placeholder="mssg"
+            ></textarea>
+            <button className="bg-black text-white m-2 col-span-2 py-2 font-semibold">
+              Submit <IoIosSend />
+            </button>
           </div>
         </form>
       </div>

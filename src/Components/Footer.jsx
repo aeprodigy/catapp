@@ -11,7 +11,7 @@ const Footer = () => {
         </h1>
       </div>
       <div className="flex justify-center ">
-        <h3 className="text-white ml-20">|</h3>
+        <h3 className="text-white ml-20 font-bold">|</h3>
         <h3 className="text-white ml-20">mambwe</h3>
       </div>
     </div>

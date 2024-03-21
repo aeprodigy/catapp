@@ -30,7 +30,7 @@ const BigImage = () => {
     <div className="sm:col-span-2 row-span-2">
       {data.map((item) => (
         <div key={item.id} className="shadow-lg">
-          <img src={item.url} alt="/" className="w-full h-full object-cover" />
+          <img src={item.url} alt="loadin.." className="w-full h-full object-cover" />
         </div>
       ))}
     </div>

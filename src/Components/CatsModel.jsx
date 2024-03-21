@@ -34,7 +34,7 @@ const CatsModel = () => {
           </h3>
           <img
             src={item.url}
-            alt="/"
+            alt="loadin.."
             className="w-[220px] md:w-[220px] h-full object-cover border-4 border-white shadow-lg hover:scale-110 "
           />
         </div>

@@ -36,7 +36,7 @@ const Gallery = () => {
           <div key={item.id} className="shadow-lg">
             <img
               src={item.url}
-              alt="/"
+              alt="Loadin.."
               className="w-full h-full object-cover"
             />
           </div>

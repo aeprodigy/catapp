@@ -1,4 +1,5 @@
 import './App.css';
+import { EmblaCarousel } from './Components/Carousel';
 import CatsModel from './Components/CatsModel';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
@@ -13,6 +14,7 @@ function App() {
       <Hero/>
       <CatsModel/>
       <Gallery/>
+      <EmblaCarousel/>
       <Contact/>
       <Footer/>
     </div>

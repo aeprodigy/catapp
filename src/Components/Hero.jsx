@@ -7,7 +7,7 @@ const Hero = () => {
       <img
         src="https://cdn2.thecatapi.com/images/a4m.jpg"
         className="w-full h-full object-cover"
-        alt="cat"
+        alt="loadin.."
       />
       <div className="max-w-[1140px] m-auto">
         <div className="absolute top-[40%] w-full md:-[50%] max-w-[600px] flex flex-col text-white p-4">

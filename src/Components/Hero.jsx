@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="absolute top-[40%] w-full md:-[50%] max-w-[600px] flex flex-col text-white p-4">
           <h1 className="text-2xl  md:text-7xl font-semibold">Find Your Pet</h1>
           <h3 className="font-thin md:text-6xl text-shadow-lg">See Your Way</h3>
-          <p>lorem</p>
+          <p>Discover Your Feline Companion</p>
         </div>
       </div>
     </div>

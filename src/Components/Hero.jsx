@@ -1,46 +1,19 @@
-import axios from 'axios';
-import React, { useState } from 'react'
+import React from 'react'
 
 const Hero = () => {
-  //Api key
-  const API_KEY =
-    "live_iFt3Tqo8B3oZO1LKao2mxS7QjTN55bJUmx9ykU0ruQhwoJXc9B1jmcFFcBeqsj5I";
-  //states
-  const [data, setData] = useState([]);
-
-  const fetchCats = () => {
-    axios(
-        `https://api.thecatapi.com/v1/images/search?limit=20&api_key=${API_KEY}`
-      )
-      .then((response) => {
-        setData(response.data);
-        console.log(response.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching cat images:", error);
-      });
-  };
-//useState effect
-  useState(() => {
-    fetchCats();
-  }, []);
-
   return (
-    <div className="min-h-full">
-      <div className='relative'>
-        <img
-          src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg"
-          alt="pic"
-          className="w-full"
-        />
-      </div>
-      <h3 className='text-center pt-8 text-4xl font-bold text-gray-700'>Cat World</h3>
-      <div className="grid md:grid-cols-3 gap-5 py-20">
-        {data.map((item) => (
-          <div key={item.id} className="mx-auto py-4">
-            <img src={item.url} alt="/" className="w-[220px] hover:scale-110 " />
-          </div>
-        ))}
+    <div className="w-full md:h-[100vh] h-[90vh] md:pt-16">
+      <img
+        src="https://cdn2.thecatapi.com/images/a4m.jpg"
+        className="w-full h-full object-cover"
+        alt="cat"
+      />
+      <div className="max-w-[1140px] m-auto">
+        <div className="absolute top-[40%] w-full md:-[50%] max-w-[600px] flex flex-col text-white p-4">
+          <h1 className="text-2xl  md:text-7xl font-semibold">Find Your Pet</h1>
+          <h3 className="font-thin md:text-6xl">See Your Way</h3>
+          <p>lorem</p>
+        </div>
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const Gallery = () => {
   }, []);
   return (
     <div className='max-w-[1200px] m-auto w-full px-4 py-16'>
-      <h2 className='text-center text-gray-600 p-4'>Gallery</h2>
+      <h2 className='text-center text-gray-600 p-4 text-xl md:text-2xl'>Gallery</h2>
       <div className='grid sm:grid-cols-5 gap-4'>
         {data.map((item) => (
           <div key={item.id} className="">

@@ -26,7 +26,7 @@ const CatsModel = () => {
     fetchCats();
   }, []);
   return (
-    <div className="max-w-[1140px] m-[57px] w-full md:flex mt-[-75px] md:justify-center">
+    <div className="md:max-w-[1200px] w-[200px]  ml-auto mr-auto md:w-full md:flex mt-[-75px] md:justify-center">
       {data.map((item) => (
         <div key={item.id} className="relative p-4 ">
           <h3 className="text-white absolute z-5 top-[25%] left-[25%] translate-x-[15%] translate-y-[160%]">
